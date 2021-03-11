@@ -39,9 +39,9 @@ namespace PracticeProblemsLINQ
         public static List<string> RunProblem2(List<string> names)
         {
             //code
-
+            var listOfCopy = names.Distinct().ToList();
             //return
-
+            return listOfCopy;
         }
         #endregion
 
@@ -51,9 +51,9 @@ namespace PracticeProblemsLINQ
         public static Customer RunProblem3(List<Customer> customers)
         {
             //code
-
+            var nameOfMike = customers.Single(m => m.FirstName == "Mike" );
             //return
-
+            return nameOfMike;
         }
         #endregion
 
