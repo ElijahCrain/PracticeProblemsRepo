@@ -18,9 +18,10 @@ namespace PracticeProblemsLINQ
         {
             //code
             //.where contanes substrate 
-            //return
-            var wordsThatContainTh = words.Where().ToList();
+            var wordsThatContainTh = words.Where(m => m.Contains("th")).ToList();
 
+            //return
+            return wordsThatContainTh;
             //where
 
             //orderby
